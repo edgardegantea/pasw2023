@@ -1,0 +1,10 @@
+sudo apt install apache2 mariad-server composer
+
+sudo apt install php-cli php-mysql php-curl php-gd php-zip php-intl php-mbstring -y
+
+sudo su
+mysql -u root
+create database phpapi
+
+
+------------------------------------------------------------

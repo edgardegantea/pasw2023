@@ -1,0 +1,26 @@
+use phpapi2;
+
+insert into perfiles(nombrePerfil, descripcion)
+    values('admin', 'Administrador del sistema'),
+          ('usuario', 'Usuario si privilegios'),
+          ('estudiante', 'Usuario con permisos de estudiante');
+
+select * from perfiles;
+
+insert into usuarios(nombreUsuario, contrasenia, perfil)
+    values ('edgar', '12345678', 1),
+           ('dulce', '87654321', 3),
+           ('monse', '09876543', 2),
+           ('rodrigo', 'halskdjl', 3);
+
+
+insert into usuarios(nombreUsuario, contrasenia, status, perfil)
+    values ('bucio', '12345678', 0, 1);
+
+select * from usuarios;
+
+
+insert into infousuario(usuario, nombre, apellidos, fechaNac, foto)
+    values  (1, 'Edgar', 'Degante', '1980/01/04', 'gasldjals');
+
+
